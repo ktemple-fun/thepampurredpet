@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-      <Image src={pampurredpet} alt="pampurred pet logo" width={200} height={100} />
+      <Image src={pampurredpet} alt="pampurred pet logo" width={300} height={100} />
       <nav className={styles.navbar}>
           <a href="#home" className={styles.navLink}>Home</a>
           <a href="#about" className={styles.navLink}>About</a>
