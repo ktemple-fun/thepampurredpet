@@ -56,7 +56,7 @@ export default function Home() {
         <p>&copy; 2024 The Pampurred Pet. All rights reserved.</p>
         <p>
           Follow us on 
-          <a href="https://instagram.com"> Pinterest</a>.
+          <a href="https://www.pinterest.com/pampurred_pet/"> Pinterest</a>.
         </p>
       </footer>
     </div>
