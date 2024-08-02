@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
           rel="stylesheet"
         />
+        <meta name="p:domain_verify" content="e521057a35122426a0170e8a2908b736"/>
       </head>
       <body className={poppins.className}>
         {children}
