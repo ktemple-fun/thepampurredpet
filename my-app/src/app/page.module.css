@@ -1,0 +1,147 @@
+.container {
+  padding: 0 2rem;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: white;
+}
+
+.navbar {
+  margin: 1rem 0;
+}
+
+.navLink {
+  margin: 0 1rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #003366;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.title {
+  margin: 0;
+  font-size: 3rem;
+  color: #003366;
+}
+
+.description {
+  margin-top: 2rem;
+  font-size: 1.rem;
+  color: #00509e;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.blogSection {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  width: 600px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.readMore {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.insuranceSection {
+  padding: 2rem;
+  background-color: #cceeff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.insuranceSection h2 {
+  font-size: 2rem;
+  color: #003366;
+}
+
+.insuranceSection p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #b3e0ff;
+  border-top: 1px solid #cce0ff;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  color: #00509e;
+}
+
+.footer a {
+  color: #0070f3;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
