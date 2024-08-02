@@ -3,21 +3,26 @@
   font-family: 'Poppins', sans-serif;
   margin: auto;
   background-color: white;
+  max-width: 100%;
 }
 
 .header {
   text-align: center;
   padding: 2rem 0;
   background-color: white;
+  width: 100%;
 }
 
 .navbar {
   margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navLink {
   margin: 0 1rem;
-  color: #0070f3;
+  color: grey;
   text-decoration: none;
   font-weight: bold;
 }
@@ -30,8 +35,9 @@
   text-align: center;
   margin: 2rem 0;
   padding: 1rem;
-  background-color: #e6f7ff;
   border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .intro h2 {
@@ -44,37 +50,30 @@
   color: #333333;
 }
 
-.title {
-  margin: 0;
-  font-size: 3rem;
-  color: #003366;
-}
-
-.description {
-  margin-top: 2rem;
-  font-size: 1.rem;
-  color: #00509e;
-}
-
 .main {
   padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blogSection {
   margin: 2rem 0;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card {
   display: inline-block;
   margin: 1rem;
   padding: 1rem;
-  width: 600px;
+  width: calc(100% - 2rem);
   text-align: left;
   background: #ffffff;
   border: 1px solid #cce0ff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .image {
@@ -107,6 +106,8 @@
   background-color: #cceeff;
   border-radius: 10px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .insuranceSection h2 {
@@ -132,6 +133,8 @@
   padding: 1rem 0;
   background-color: #b3e0ff;
   border-top: 1px solid #cce0ff;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer p {
@@ -143,4 +146,23 @@
   color: #0070f3;
   text-decoration: none;
   margin: 0 0.5rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 22%;
+  }
 }
