@@ -44,7 +44,7 @@ export default function Home() {
 
         <section className={styles.insuranceSection}>
           <h2>The Importance of Pet Insurance</h2>
-          <p>Pet insurance can save you thousands of dollars in unexpected veterinary bills.  It&apos;s crucial for every pet owner to consider investing in a good insurance plan to ensure their pet's health and well-being.</p>
+          <p>Pet insurance can save you thousands of dollars in unexpected veterinary bills.  Its crucial for every pet owner to consider investing in a good insurance plan to ensure their pet's health and well-being.</p>
           <a href="https://theswiftest.com/pet-insurance/?transaction_id=&oid=1&affid=1669" className={styles.link}>See the top 7 pet insurance companies of 2024</a>
         </section>
 
