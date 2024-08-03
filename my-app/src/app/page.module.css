@@ -3,7 +3,7 @@
   font-family: 'Poppins', sans-serif;
   margin: auto;
   background-color: white;
-  max-width: 100%;
+  max-width: 1200px;
 }
 
 .header {
@@ -31,59 +31,79 @@
   text-decoration: underline;
 }
 
-.intro {
-  text-align: center;
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  color: #003366;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  color: #333333;
+.description {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #00509e;
 }
 
 .main {
+  display: flex;
+  justify-content: space-between;
   padding: 2rem 0;
   width: 100%;
   box-sizing: border-box;
 }
 
-.blogSection {
-  margin: 2rem 0;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+.content {
+  flex: 3;
+  margin-right: 2rem;
 }
 
-.card {
-  display: inline-block;
-  margin: 1rem;
-  padding: 1rem;
-  width: calc(100% - 2rem);
-  text-align: left;
-  background: #ffffff;
+.featuredSection,
+.blogSection {
+  margin-bottom: 2rem;
+}
+
+.featuredSection h2,
+.blogSection h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.featuredCard {
+  display: flex;
+  align-items: center;
   border: 1px solid #cce0ff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  padding: 1rem;
+  background: #ffffff;
 }
 
-.image {
-  width: 100%;
-  height: auto;
+.featuredContent {
+  margin-left: 1rem;
+}
+
+.featuredContent h3 {
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+.featuredContent p {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.featuredContent .readMore {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.card {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #cce0ff;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
 }
 
 .card h3 {
-  margin: 1rem 0;
   font-size: 1.5rem;
   color: #003366;
 }
@@ -93,7 +113,7 @@
   color: #333333;
 }
 
-.readMore {
+.card .readMore {
   display: block;
   margin-top: 1rem;
   text-align: right;
@@ -101,22 +121,31 @@
   text-decoration: none;
 }
 
-.insuranceSection {
-  padding: 2rem;
-  background-color: #cceeff;
-  border-radius: 10px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
+.aboutSection,
+.insuranceSection {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutSection h2,
 .insuranceSection h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #003366;
 }
 
+.aboutSection p,
 .insuranceSection p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333333;
 }
 
@@ -149,20 +178,22 @@
 }
 
 /* Media Queries for Responsive Design */
-@media (min-width: 600px) {
-  .card {
-    width: 45%;
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
   }
-}
 
-@media (min-width: 768px) {
-  .card {
-    width: 30%;
+  .content {
+    margin-right: 0;
   }
-}
 
-@media (min-width: 1024px) {
-  .card {
-    width: 22%;
+  .featuredCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featuredContent {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
